@@ -5,7 +5,7 @@ const specialMenus = [
     description:
       "Juicy and crispy fried sushi rolls with a sweet and savory sauce.",
     price: "$12",
-    image: "/herobanner.png",
+    image: "/fss.png",
   },
   {
     id: 2,
@@ -13,7 +13,7 @@ const specialMenus = [
     description:
       "Delicious ramen noodles cooked with a spicy and savory broth.",
     price: "$10",
-    image: "/ramen.jpg",
+    image: "/sr.png",
   },
   {
     id: 3,
@@ -21,7 +21,7 @@ const specialMenus = [
     description:
       "Handcrafted bento box filled with fresh ingredients and traditional Japanese flavors.",
     price: "$15",
-    image: "/bento.jpg",
+    image: "/newbento.png",
   },
   {
     id: 4,
@@ -29,7 +29,7 @@ const specialMenus = [
     description:
       "Assorted sashimi platter with a variety of fresh seafood and vegetables.",
     price: "$18",
-    image: "/sashimi.jpg",
+    image: "/ssm.png",
   },
 ];
 const TodaySpecial = () => {
@@ -56,7 +56,7 @@ const TodaySpecial = () => {
                 <img
                   src={item.image}
                   alt={item.title}
-                  className="w-52 h-52 object-contain drop-shadow-[0_0_30px_rgba(217,72,95,0.35)]"
+                  className="w-52 rotate-3 shadow-lg h-52 object-contain drop-shadow-[0_0_30px_rgba(217,72,95,0.35)]"
                 />
               </div>
 
