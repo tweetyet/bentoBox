@@ -1,4 +1,6 @@
+import {Link} from 'react-router-dom';
 const Herobanner = () => {
+
   return (
     <section className="bg-[#121212] text-[#F8F3ED] min-h-screen flex items-center">
 
@@ -25,9 +27,11 @@ const Herobanner = () => {
           Order Now
         </button>
 
+       <Link to="/menu">
         <button className="border border-[#C9A227] px-6 py-3 rounded-full hover:bg-[#C9A227] hover:text-black transition duration-300">
           View Menu
         </button>
+       </Link>
 
       </div>
 

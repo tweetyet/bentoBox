@@ -1,4 +1,5 @@
 import { ShoppingCart } from "lucide-react"
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
   return (
@@ -20,21 +21,21 @@ const Navbar = () => {
     {/* Nav Links */}
     <ul className="flex items-center space-x-8 text-[#F8F3ED] font-medium hidden md:flex">
 
-      <li className="hover:text-[#D9485F] transition duration-300 cursor-pointer shadow-md">
+      <a href="/" className="hover:text-[#D9485F] transition duration-300 cursor-pointer shadow-md">
         Home
-      </li>
+      </a>
 
-      <li className="hover:text-[#D9485F] transition duration-300 cursor-pointer">
+      <Link to="/menu" className="hover:text-[#D9485F] transition duration-300 cursor-pointer shadow-md">
         Menu
-      </li>
+      </Link>
 
-      <li className="hover:text-[#D9485F] transition duration-300 cursor-pointer">
+      <a href="#featuresection" className="hover:text-[#D9485F] transition duration-300 cursor-pointer shadow-md">
         About
-      </li>
+      </a>
 
-      <li className="hover:text-[#D9485F] transition duration-300 cursor-pointer">
+      <a href="#contact" className="hover:text-[#D9485F] transition duration-300 cursor-pointer shadow-md">
         Contact
-      </li>
+      </a>
 
       {/* Order Button */}
       <button className="bg-[#D9485F] hover:bg-[#C9A227] px-5 py-2 rounded-full text-white transition duration-300 flex items-center gap-2">

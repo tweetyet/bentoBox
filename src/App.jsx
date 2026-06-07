@@ -1,23 +1,23 @@
+import { Routes, Route } from 'react-router-dom';
 
-import Navbar from './components/Navbar'
-import Herobanner from './components/Herobanner'
 import './index.css'
-import FeatureSection from './components/FeatureSection'
-import Footer from './components/Footer'
-import TodaySpecial from './components/TodaySpecial'
-import Testimonial from './components/Testimonial'
+import Homepage from './pages/Homepage';
+// import ApiMenu from './pages/ApiMenu';
+import Contact from './pages/Contact';
+import Menus from './pages/menus';
+
 
 function App() {
 
   return (
-    <>
-     <Navbar/>
-     <Herobanner/>
-     <TodaySpecial/>
-     <FeatureSection/>
-     <Testimonial/>
-     <Footer/>
-    </>
+     <Routes>
+      <Route path="/" element={<Homepage/>} />
+      <Route path="/menu" element={<Menus />} />
+      {/* <Route path="/menu" element={<ApiMenu />} /> */}
+      
+      <Route path="/contact" element={<Contact />} />
+    </Routes>
+    
   )
 }
 
