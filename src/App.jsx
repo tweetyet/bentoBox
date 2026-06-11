@@ -4,7 +4,7 @@ import './index.css'
 import Homepage from './pages/Homepage';
 // import ApiMenu from './pages/ApiMenu';
 import Contact from './pages/Contact';
-import Menus from './pages/menus';
+import Menus from './pages/Menus';
 
 
 function App() {
