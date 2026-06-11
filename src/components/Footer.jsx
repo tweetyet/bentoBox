@@ -1,3 +1,4 @@
+import AppDownload from "./AppDownload"
 
 const Footer = () => {
   return (
@@ -87,6 +88,8 @@ const Footer = () => {
     </div>
 
   </div>
+
+  <AppDownload/>
 
   {/* Bottom */}
   <div className="border-t border-[#2a2a2a] py-6 text-center text-gray-500 text-sm">
